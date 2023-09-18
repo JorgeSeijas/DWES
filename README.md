@@ -1,4 +1,4 @@
-# Este es un archivo README
+<h1>Este es un archivo README</h1>
 
 Contiene sintaxis markdown y se usa para:
 * Dar una breve descripcion del contenido del repositorio
