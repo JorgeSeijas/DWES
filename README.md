@@ -1,8 +1,38 @@
-<h1>Este es un archivo README</h1>
-![download](https://github.com/JorgeSeijas/DWES/assets/145001194/043a032f-27dd-499b-88d8-3d166ddbc562)
+<h1 align = "center">Repositorio de Desarrollo Web Entorno Servidor</h1>
 
-Contiene sintaxis markdown y se usa para:
-* :construction_worker_man: Dar una breve descripcion del contenido del repositorio
-* :ok_hand: Contar como sacar provecho del trabajo aqui presente
-* :bulb: Explicar a los interesados como contribuir
-* :book: Etc
+<h3>Índice</h3>
+
+* [Descripción del proyecto](#descripción-del-proyecto)
+  
+* [Estado del proyecto](#Estado-del-proyecto)
+  
+* [Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+  
+* [Acceso al proyecto](#acceso-proyecto)
+  
+* [Personas Contribuyentes](#personas-contribuyentes)
+  
+* [Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
+  
+* [Licencia](#licencia)
+  
+* [Conclusión](#conclusión)
+<br/><br/>
+
+<h3>Descripción del proyecto</h3>
+:man_teacher: Aquí se publicará todo lo realizado durante el curso empleando tecnologías como:
+<ul>
+  <li>PHP</li>
+  <li>Python</li>
+  <li>Debian</li>
+  <li>Django</li>
+</ul>
+<br/>
+
+<h3>Estado del proyecto</h3>
+:construction: Proyecto en construcción :construction:
+<br/><br/>
+
+<h3>Personas-Desarrolladores del Proyecto</h3>
+<img src="https://github.com/JorgeSeijas/DWES/assets/145001194/dc38a394-ac16-4f21-ac57-a333972cfa5f" width=115><br><sub>Jorge Seijas</sub>
+<br/>
