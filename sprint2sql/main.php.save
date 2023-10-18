@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<?php
+	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
+?>
+
+	<h1>Conexion establecida</h1>
+	<?php
+	$query = 'SELECT * FROM tJuegos';
+	$result = mysqli_query($db, $query) or die('Query error');
+	while ($row = mysqli_fetch_array($result)){
+		echo $row['id'];
+		echo '<br>';
+echo $row[''];
+		echo '<br>';
+	}
+	?>
+</body>
+</html>
