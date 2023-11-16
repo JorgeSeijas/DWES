@@ -8,9 +8,9 @@
         $query = $db->prepare ("SELECT * FROM tUsuarios WHERE email = ?");
         $query -> bind_param ("s", $email_posted);
         $query -> execute();
-        
-        if (mysqli_num_rows($query) > 0) {
-            $only_row = mysqli_fetch_array($query);
+        $result = $query -> get_result();
+        if (mysqli_num_rows($result) > 0) {
+            $only_row = mysqli_fetch_array($result);
             if (password_verify($only_row['constraseña'], $hash)) {
                 session_start();
                 $_SESSION['user_id'] = $only_row[0];
@@ -22,6 +22,6 @@
             echo '<p>Usuario no encontrado con ese email</p>';
         }
         $query -> close();
-?>  
+    ?>  
     </body>
 </html>
