@@ -5,6 +5,16 @@
 		h2 {
 			color: red;
 		}
+		a {
+			text-decoration: none;
+			color: blue;
+		}
+		a:hover {
+			color: red;
+		}
+		a {
+			transition: color 0.8s linear 0.2s;
+		}
 	</style>
 </head>
 <body>
