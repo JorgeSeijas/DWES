@@ -12,7 +12,27 @@ def devolver_juegos(request):
         diccionario = {}
         diccionario['id'] = fila_sql.id
         diccionario['nombre'] = fila_sql.nombre
+        diccionario['url_imagen'] = fila_sql.url_imagen
         diccionario['anyo'] = fila_sql.anyo
         diccionario['genero'] = fila_sql.genero
         respuesta_final.append(diccionario)
     return JsonResponse(respuesta_final, safe = False)
+
+def devolver_juego_por_id(request, id_solicitado):
+    juego = Tjuegos.objects.get(id = id_solicitado)
+    comentarios = juego.tcomentarios_set.all()
+    lista_comentarios = []
+    for fila_comentario_sql in comentarios:
+        diccionario = {}
+        diccionario['id'] = fila_comentario_sql.id
+        diccionario['comentario'] = fila_comentario_sql.comentario
+        lista_comentarios.append(diccionario)
+    resultado = {
+        'id': juego.id,
+        'nombre': juego.nombre,
+        'url_imagen': juego.url_imagen,
+        'año': juego.anyo,
+        'genero': juego.genero,
+        'comentarios': lista_comentarios
+    }
+    return JsonResponse(resultado, json_dumps_params={'ensure_ascii': False})
