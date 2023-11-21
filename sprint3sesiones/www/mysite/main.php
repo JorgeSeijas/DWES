@@ -21,7 +21,7 @@
 	<a href="/logout.php">Desconectarse</a>
 	<br>
 	<?php
-		$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail'); //Nos conectamos a la base "mysitedb" de datos con usuario root y su contraseña desde el localhost
+		$db = mysqli_connect('172.16.0.2', 'root', '1234', 'mysitedb') or die('Fail'); //Nos conectamos a la base "mysitedb" de datos con usuario root y su contraseña desde el localhost
 	?>
 	<!--Si conecta el programa sigue adelante-->
 	<h1>Conexion establecida</h1>

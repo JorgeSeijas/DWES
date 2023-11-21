@@ -1,7 +1,7 @@
 <html>
     <body>
     <?php
-        $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
+        $db = mysqli_connect('172.16.0.2', 'root', '1234', 'mysitedb') or die('Fail');
         $email_posted = $_POST['f_email'];
         $password_posted = $_POST['f_password'];
         $hash = password_hash($password_posted, PASSWORD_DEFAULT);
